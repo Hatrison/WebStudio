@@ -1,0 +1,140 @@
+.modal-wnd-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-wnd-inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-wnd-text {
+  display: block;
+  font-weight: var(--main-headers-font-weight);
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.modal-wnd-input-desc {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--main-additional-color);
+}
+
+.modal-wdn-input-wrapper {
+  display: block;
+  position: relative;
+}
+
+.modal-wnd-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--main-secondary-color);
+  }
+}
+
+.modal-wnd-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  fill: var(--main-font-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-wnd-input:focus + & {
+    fill: var(--main-secondary-color);
+  }
+}
+
+.modal-wdn-comment {
+  display: block;
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.modal-wnd-checkbox-string {
+  margin-left: 14px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.terms-of-an-agreement-checkbox {
+  display: block;
+}
+
+.terms-of-an-agreement-custom-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+
+  .terms-of-an-agreement-checkbox:focus ~ & {
+    border-radius: 1px;
+    box-shadow: 0 0 0 2px var(--main-secondary-color);
+  }
+}
+
+.terms-of-an-agreement-custom-checkbox-non-active {
+  display: block;
+
+  .terms-of-an-agreement-checkbox:checked + & {
+    display: none;
+  }
+}
+
+.terms-of-an-agreement-custom-checkbox-active {
+  display: none;
+
+  .terms-of-an-agreement-checkbox:checked ~ & {
+    display: block;
+  }
+}
+
+.terms-of-an-agreement-text {
+  margin-left: 8px;
+  display: block;
+  line-height: 1.71;
+  color: var(--main-additional-color);
+}
+
+.terms-of-an-agreement-link {
+  line-height: 1.71;
+  color: var(--main-secondary-color);
+
+  &:visited {
+    color: var(--main-secondary-color);
+  }
+}
+
+.modal-wnd-btn {
+  align-self: center;
+  margin-top: 30px;
+}

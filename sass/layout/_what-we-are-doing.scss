@@ -1,0 +1,24 @@
+.what-we-are-doing-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.what-we-are-doing-list-item {
+  position: relative;
+}
+
+.what-we-are-doing-overlay {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  font-weight: var(--main-headers-font-weight);
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--colored-theme-main-color);
+  background-color: var(--bg-color-overlay);
+}

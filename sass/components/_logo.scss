@@ -1,0 +1,11 @@
+.logo {
+  font-family: var(--logo-font);
+  font-weight: var(--main-headers-font-weight);
+  color: var(--main-secondary-color);
+  font-size: var(--logo-font-size);
+  line-height: 1.19;
+
+  &:visited {
+    color: var(--main-secondary-color);
+  }
+}
