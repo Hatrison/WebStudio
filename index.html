@@ -61,7 +61,42 @@
               >
             </li>
           </ul>
+          <button class="js-open-menu visually-hidden">
+            <svg>
+              <use></use>
+            </svg>
+          </button>
         </div>
+      </div>
+      <div class="js-menu-container visually-hidden">
+        <button type="button" class="js-close-menu modal-close-btn">
+          <svg class="modal-close-btn-icon">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <ul class="list">
+          <li>
+            <a href="./index.html" class="link nav-list__link nav-list__link_current">Студія</a>
+          </li>
+          <li><a href="./portfolio.html" class="link nav-list__link">Портфоліо</a></li>
+          <li><a href="#contacts" class="link nav-list__link">Контакти</a></li>
+        </ul>
+        <ul class="list">
+          <li>
+            <a href="tel:+380961111111" class="link contacts-list__item">+38 096 111 11 11</a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="link contacts-list__item"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="list">
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">LinkedIn</a></li>
+        </ul>
       </div>
     </header>
     <main>
@@ -129,30 +164,81 @@
           <h2 class="header">Чим ми займаємося</h2>
           <ul class="list what-we-are-doing-list">
             <li class="what-we-are-doing-list-item">
-              <img
-                src="./images/main/what-we-are-doing/what-we-are-doing-1.jpg"
-                alt="Кодінг"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-1.webp    1x,
+                    ./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-1@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-1.jpg    1x,
+                    ./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-1.jpg"
+                  alt="Кодінг"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="what-we-are-doing-overlay">Десктопні додатки</p>
             </li>
             <li class="what-we-are-doing-list-item">
-              <img
-                src="./images/main/what-we-are-doing/what-we-are-doing-2.jpg"
-                alt="Телефон в руках для перевірки верстки"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-2.webp    1x,
+                    ./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-2@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-2.jpg    1x,
+                    ./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-2.jpg"
+                  alt="Телефон в руках для перевірки верстки"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="what-we-are-doing-overlay">Мобільні додатки</p>
             </li>
             <li class="what-we-are-doing-list-item">
-              <img
-                src="./images/main/what-we-are-doing/what-we-are-doing-3.jpg"
-                alt="Кольорова палітра на планшеті"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-3.webp    1x,
+                    ./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-3@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-3.jpg    1x,
+                    ./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-3.jpg"
+                  alt="Кольорова палітра на планшеті"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="what-we-are-doing-overlay">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -163,12 +249,59 @@
           <h2 class="header">Наша команда</h2>
           <ul class="list our-team-list">
             <li class="our-team-card">
-              <img
-                src="./images/main/our-team/our-team-1.jpg"
-                alt="Чоловік в окулярах, який посміхається"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/desktop/our-team/desktop-our-team-1.webp    1x,
+                    ./images/main/desktop/our-team/desktop-our-team-1@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/desktop/our-team/desktop-our-team-1.jpg    1x,
+                    ./images/main/desktop/our-team/desktop-our-team-1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/tablet/our-team/tablet-our-team-1.webp    1x,
+                    ./images/main/tablet/our-team/tablet-our-team-1@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/tablet/our-team/tablet-our-team-1.jpg    1x,
+                    ./images/main/tablet/our-team/tablet-our-team-1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/mobile/our-team/mobile-our-team-1.webp    1x,
+                    ./images/main/mobile/our-team/mobile-our-team-1@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/mobile/our-team/mobile-our-team-1.jpg    1x,
+                    ./images/main/mobile/our-team/mobile-our-team-1@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/main/mobile/our-team/mobile-our-team-1.jpg"
+                  alt="Чоловік в окулярах, який посміхається"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="our-team-card-name">
                 <h3 class="our-team-name">Ігор Дем'яненко</h3>
                 <p class="our-team-paragraphs">Product Designer</p>
@@ -217,12 +350,59 @@
               </div>
             </li>
             <li class="our-team-card">
-              <img
-                src="./images/main/our-team/our-team-2.jpg"
-                alt="Жінка в окулярах, яка посміхається"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/desktop/our-team/desktop-our-team-2.webp    1x,
+                    ./images/main/desktop/our-team/desktop-our-team-2@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/desktop/our-team/desktop-our-team-2.jpg    1x,
+                    ./images/main/desktop/our-team/desktop-our-team-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/tablet/our-team/tablet-our-team-2.webp    1x,
+                    ./images/main/tablet/our-team/tablet-our-team-2@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/tablet/our-team/tablet-our-team-2.jpg    1x,
+                    ./images/main/tablet/our-team/tablet-our-team-2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/mobile/our-team/mobile-our-team-2.webp    1x,
+                    ./images/main/mobile/our-team/mobile-our-team-2@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/mobile/our-team/mobile-our-team-2.jpg    1x,
+                    ./images/main/mobile/our-team/mobile-our-team-2@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/main/mobile/our-team/mobile-our-team-2.jpg"
+                  alt="Жінка в окулярах, яка посміхається"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="our-team-card-name">
                 <h3 class="our-team-name">Ольга Рєпіна</h3>
                 <p class="our-team-paragraphs">Frontend Developer</p>
@@ -271,12 +451,59 @@
               </div>
             </li>
             <li class="our-team-card">
-              <img
-                src="./images/main/our-team/our-team-3.jpg"
-                alt="Чоловік, який посміхається"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/desktop/our-team/desktop-our-team-3.webp    1x,
+                    ./images/main/desktop/our-team/desktop-our-team-3@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/desktop/our-team/desktop-our-team-3.jpg    1x,
+                    ./images/main/desktop/our-team/desktop-our-team-3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/tablet/our-team/tablet-our-team-3.webp    1x,
+                    ./images/main/tablet/our-team/tablet-our-team-3@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/tablet/our-team/tablet-our-team-3.jpg    1x,
+                    ./images/main/tablet/our-team/tablet-our-team-3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/mobile/our-team/mobile-our-team-3.webp    1x,
+                    ./images/main/mobile/our-team/mobile-our-team-3@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/mobile/our-team/mobile-our-team-3.jpg    1x,
+                    ./images/main/mobile/our-team/mobile-our-team-3@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/main/mobile/our-team/mobile-our-team-3.jpg"
+                  alt="Чоловік, який посміхається"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="our-team-card-name">
                 <h3 class="our-team-name">Микола Тарасов</h3>
                 <p class="our-team-paragraphs">Marketing</p>
@@ -325,12 +552,59 @@
               </div>
             </li>
             <li class="our-team-card">
-              <img
-                src="./images/main/our-team/our-team-4.jpg"
-                alt="Чоловік в окулярах"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/desktop/our-team/desktop-our-team-4.webp    1x,
+                    ./images/main/desktop/our-team/desktop-our-team-4@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/desktop/our-team/desktop-our-team-4.jpg    1x,
+                    ./images/main/desktop/our-team/desktop-our-team-4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/tablet/our-team/tablet-our-team-4.webp    1x,
+                    ./images/main/tablet/our-team/tablet-our-team-4@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/tablet/our-team/tablet-our-team-4.jpg    1x,
+                    ./images/main/tablet/our-team/tablet-our-team-4@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/mobile/our-team/mobile-our-team-4.webp    1x,
+                    ./images/main/mobile/our-team/mobile-our-team-4@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/main/mobile/our-team/mobile-our-team-4.jpg    1x,
+                    ./images/main/mobile/our-team/mobile-our-team-4@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/main/mobile/our-team/mobile-our-team-4.jpg"
+                  alt="Чоловік в окулярах"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="our-team-card-name">
                 <h3 class="our-team-name">Михайло Єрмаков</h3>
                 <p class="our-team-paragraphs">UI Designer</p>
