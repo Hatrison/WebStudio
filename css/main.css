@@ -794,7 +794,7 @@ ol {
 }
 
 .our-clients-list-item {
-  flex-basis: calc(100% - 25px);
+  width: 100%;
 }
 
 .our-clients-link {
