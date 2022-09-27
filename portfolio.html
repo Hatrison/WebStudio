@@ -63,10 +63,51 @@
               >
             </li>
           </ul>
+          <button class="burger-menu" data-menu-open>
+            <svg class="burger-menu__icon-menu">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close-btn__icon">
+              <use href="./images/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-menu__nav-list">
+            <li>
+              <a href="./index.html" class="link mobile-menu__link">Студія</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link mobile-menu__link mobile-menu__link_current"
+                >Портфоліо</a
+              >
+            </li>
+            <li><a href="#contacts" class="link mobile-menu__link">Контакти</a></li>
+          </ul>
+          <ul class="list mobile-menu__contacts-list">
+            <li>
+              <a href="tel:+380961111111" class="link mobile-menu__tel">+38 096 111 11 11</a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="link mobile-menu__email"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list mobile-menu__social-links-list">
+            <li><a href="" class="link mobile-menu__social-link">Instagram</a></li>
+            <li><a href="" class="link mobile-menu__social-link">Twitter</a></li>
+            <li><a href="" class="link mobile-menu__social-link">Facebook</a></li>
+            <li><a href="" class="link mobile-menu__social-link">LinkedIn</a></li>
+          </ul>
         </div>
       </div>
     </header>
-    <main>
+    <!-- <main>
       <section class="portfolio section">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
@@ -127,12 +168,7 @@
                       "
                       media="(min-width: 480px)"
                     />
-                    <img
-                      src="./images/portfolio/mobile/mobile-portfolio-1.jpg"
-                      alt="Ноутбук"
-                      width="370"
-                      height="294"
-                    />
+                    <img src="./images/portfolio/mobile/mobile-portfolio-1.jpg" alt="Ноутбук" />
                   </picture>
                   <p class="portfolio-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -198,8 +234,6 @@
                     <img
                       src="./images/portfolio/mobile/mobile-portfolio-2.jpg"
                       alt="Баскетболісти"
-                      width="370"
-                      height="294"
                     />
                   </picture>
                   <p class="portfolio-overlay">
@@ -266,8 +300,6 @@
                     <img
                       src="./images/portfolio/mobile/mobile-portfolio-3.jpg"
                       alt="Лого ресторану The seafood"
-                      width="370"
-                      height="294"
                     />
                   </picture>
                   <p class="portfolio-overlay">
@@ -331,12 +363,7 @@
                       "
                       media="(min-width: 480px)"
                     />
-                    <img
-                      src="./images/portfolio/mobile/mobile-portfolio-4.jpg"
-                      alt="Навушники"
-                      width="370"
-                      height="294"
-                    />
+                    <img src="./images/portfolio/mobile/mobile-portfolio-4.jpg" alt="Навушники" />
                   </picture>
                   <p class="portfolio-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -399,12 +426,7 @@
                       "
                       media="(min-width: 480px)"
                     />
-                    <img
-                      src="./images/portfolio/mobile/mobile-portfolio-5.jpg"
-                      alt="Коробки"
-                      width="370"
-                      height="294"
-                    />
+                    <img src="./images/portfolio/mobile/mobile-portfolio-5.jpg" alt="Коробки" />
                   </picture>
                   <p class="portfolio-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -467,12 +489,7 @@
                       "
                       media="(min-width: 480px)"
                     />
-                    <img
-                      src="./images/portfolio/mobile/mobile-portfolio-6.jpg"
-                      alt="АйМак"
-                      width="370"
-                      height="294"
-                    />
+                    <img src="./images/portfolio/mobile/mobile-portfolio-6.jpg" alt="АйМак" />
                   </picture>
                   <p class="portfolio-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -538,8 +555,6 @@
                     <img
                       src="./images/portfolio/mobile/mobile-portfolio-7.jpg"
                       alt="Книга в обмеженому тиражі"
-                      width="370"
-                      height="294"
                     />
                   </picture>
                   <p class="portfolio-overlay">
@@ -603,12 +618,7 @@
                       "
                       media="(min-width: 480px)"
                     />
-                    <img
-                      src="./images/portfolio/mobile/mobile-portfolio-8.jpg"
-                      alt="Бірка"
-                      width="370"
-                      height="294"
-                    />
+                    <img src="./images/portfolio/mobile/mobile-portfolio-8.jpg" alt="Бірка" />
                   </picture>
                   <p class="portfolio-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -674,8 +684,6 @@
                     <img
                       src="./images/portfolio/mobile/mobile-portfolio-9.jpg"
                       alt="Руки, які щось пишуть на ноутбуці"
-                      width="370"
-                      height="294"
                     />
                   </picture>
                   <p class="portfolio-overlay">
@@ -789,8 +797,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

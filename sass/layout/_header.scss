@@ -1,3 +1,33 @@
+@media screen and (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
+
+  .contacts-list {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 0px;
+  }
+
+  .burger-menu__icon-menu {
+    width: 24px;
+    height: 16px;
+    fill: #000;
+  }
+
+  .navigation-container {
+    justify-content: space-between;
+  }
+}
+
 .page-header {
   border-bottom: 1px solid #eeeeee;
 }
@@ -13,93 +43,112 @@
 }
 
 .navigation-bar__logo {
-  padding: 24px 0 25px 0;
+  padding: 16px 0;
 }
 
 .logo__text_theme_light {
   color: var(--logo-header-secondary-color);
 }
 
-.nav-list {
-  display: flex;
-  column-gap: 50px;
-}
-
-.navigation-bar__nav-list {
-  margin-left: 93px;
-}
-
-.nav-list__item {
-  padding: 32px 0px;
-}
-
-.nav-list__link {
-  height: 100%;
-  font-weight: var(--header-font-weight);
-  color: var(--main-font-color);
-  line-height: 1.14;
-  padding: 32px 0px;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: var(--main-secondary-color);
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    display: none;
   }
 
-  &_current {
-    position: relative;
-    color: var(--main-secondary-color);
+  .navigation-bar__logo {
+    padding: 26px 0;
+  }
 
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-      height: 4px;
-      width: 100%;
-      border-radius: 2px;
-      background-color: var(--main-secondary-color);
+  .nav-list {
+    display: flex;
+    column-gap: 50px;
+  }
+
+  .navigation-bar__nav-list {
+    margin-left: 87px;
+  }
+
+  .nav-list__link {
+    height: 100%;
+    font-weight: var(--header-font-weight);
+    line-height: 1.14;
+    padding: 32px 0px;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--main-secondary-color);
+    }
+    &_current {
+      position: relative;
+      color: var(--main-secondary-color);
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        background-color: var(--main-secondary-color);
+      }
+    }
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navigation-bar__contacts-list {
+    margin-left: auto;
+  }
+
+  .contacts-list__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--main-additional-color);
+    font-weight: var(--header-font-weight);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--main-secondary-color);
+    }
+  }
+
+  .contacts-list__icon {
+    fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .contacts-list__item:hover &,
+    .contacts-list__item:focus & {
+      fill: var(--main-secondary-color);
     }
   }
 }
 
-.contacts-list {
-  display: flex;
-  column-gap: 50px;
-}
-
-.navigation-bar__contacts-list {
-  margin-left: auto;
-}
-
-.contacts-list__item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--main-additional-color);
-  font-weight: var(--header-font-weight);
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding: 32px 0px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: var(--main-secondary-color);
+@media screen and (min-width: 1200px) {
+  .navigation-bar__logo {
+    padding: 24px 0 25px 0;
   }
 
-  &:visited {
-    color: var(--main-additional-color);
+  .navigation-bar__nav-list {
+    margin-left: 92px;
   }
-}
 
-.contacts-list__icon {
-  fill: #757575;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .contacts-list {
+    flex-direction: row;
+    gap: 30px;
+  }
 
-  .contacts-list__item:hover &,
-  .contacts-list__item:focus & {
-    fill: var(--main-secondary-color);
+  .contacts-list__item {
+    padding: 32px 0;
   }
 }

@@ -1,4 +1,4 @@
-.modal-wnd-form {
+  .modal-wnd-form {
   display: flex;
   flex-direction: column;
 }
@@ -78,7 +78,6 @@
 }
 
 .modal-wnd-checkbox-string {
-  margin-left: 14px;
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -119,6 +118,8 @@
 }
 
 .terms-of-an-agreement-text {
+  font-size: 12px;
+  line-height: 1.17;
   margin-left: 8px;
   display: block;
   line-height: 1.71;
@@ -137,4 +138,15 @@
 .modal-wnd-btn {
   align-self: center;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-wnd-checkbox-string {
+    margin-left: 14px;
+  }
+
+  .terms-of-an-agreement-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }

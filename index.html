@@ -61,54 +61,58 @@
               >
             </li>
           </ul>
-          <button class="js-open-menu visually-hidden">
-            <svg>
-              <use></use>
+          <button class="burger-menu" data-menu-open>
+            <svg class="burger-menu__icon-menu">
+              <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
         </div>
       </div>
-      <div class="js-menu-container visually-hidden">
-        <button type="button" class="js-close-menu modal-close-btn">
-          <svg class="modal-close-btn-icon">
-            <use href="./images/icons.svg#icon-close-btn"></use>
-          </svg>
-        </button>
-        <ul class="list">
-          <li>
-            <a href="./index.html" class="link nav-list__link nav-list__link_current">Студія</a>
-          </li>
-          <li><a href="./portfolio.html" class="link nav-list__link">Портфоліо</a></li>
-          <li><a href="#contacts" class="link nav-list__link">Контакти</a></li>
-        </ul>
-        <ul class="list">
-          <li>
-            <a href="tel:+380961111111" class="link contacts-list__item">+38 096 111 11 11</a>
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="link contacts-list__item"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="list">
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Facebook</a></li>
-          <li><a href="">LinkedIn</a></li>
-        </ul>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close-btn__icon">
+              <use href="./images/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-menu__nav-list">
+            <li>
+              <a href="./index.html" class="link mobile-menu__link mobile-menu__link_current"
+                >Студія</a
+              >
+            </li>
+            <li><a href="./portfolio.html" class="link mobile-menu__link">Портфоліо</a></li>
+            <li><a href="#contacts" class="link mobile-menu__link">Контакти</a></li>
+          </ul>
+          <ul class="list mobile-menu__contacts-list">
+            <li>
+              <a href="tel:+380961111111" class="link mobile-menu__tel">+38 096 111 11 11</a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="link mobile-menu__email"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list mobile-menu__social-links-list">
+            <li><a href="" class="link mobile-menu__social-link">Instagram</a></li>
+            <li><a href="" class="link mobile-menu__social-link">Twitter</a></li>
+            <li><a href="" class="link mobile-menu__social-link">Facebook</a></li>
+            <li><a href="" class="link mobile-menu__social-link">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <section class="decision-for-your-bussiness">
         <div class="container hero-container">
-          <h1 class="hero-container__text">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero-container__text">Ефективні рішення для<br>вашого бізнесу</h1>
           <button type="button" class="modal-btn modal-btn_hero-size" data-modal-open>
             Замовити послугу
           </button>
         </div>
       </section>
-      <section class="section our-advantages-section">
+      <!-- <section class="section our-advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="list our-advantages-list">
@@ -183,8 +187,6 @@
                 <img
                   src="./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-1.jpg"
                   alt="Кодінг"
-                  width="370"
-                  height="294"
                 />
               </picture>
               <p class="what-we-are-doing-overlay">Десктопні додатки</p>
@@ -209,8 +211,6 @@
                 <img
                   src="./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-2.jpg"
                   alt="Телефон в руках для перевірки верстки"
-                  width="370"
-                  height="294"
                 />
               </picture>
               <p class="what-we-are-doing-overlay">Мобільні додатки</p>
@@ -235,8 +235,6 @@
                 <img
                   src="./images/main/desktop/what-we-are-doing/desktop-what-we-are-doing-3.jpg"
                   alt="Кольорова палітра на планшеті"
-                  width="370"
-                  height="294"
                 />
               </picture>
               <p class="what-we-are-doing-overlay">Дизайнерські рішення</p>
@@ -298,8 +296,6 @@
                 <img
                   src="./images/main/mobile/our-team/mobile-our-team-1.jpg"
                   alt="Чоловік в окулярах, який посміхається"
-                  width="270"
-                  height="260"
                 />
               </picture>
               <div class="our-team-card-name">
@@ -399,8 +395,6 @@
                 <img
                   src="./images/main/mobile/our-team/mobile-our-team-2.jpg"
                   alt="Жінка в окулярах, яка посміхається"
-                  width="270"
-                  height="260"
                 />
               </picture>
               <div class="our-team-card-name">
@@ -500,8 +494,6 @@
                 <img
                   src="./images/main/mobile/our-team/mobile-our-team-3.jpg"
                   alt="Чоловік, який посміхається"
-                  width="270"
-                  height="260"
                 />
               </picture>
               <div class="our-team-card-name">
@@ -601,8 +593,6 @@
                 <img
                   src="./images/main/mobile/our-team/mobile-our-team-4.jpg"
                   alt="Чоловік в окулярах"
-                  width="270"
-                  height="260"
                 />
               </picture>
               <div class="our-team-card-name">
@@ -703,9 +693,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="address-section">
           <div class="footer-logo">
@@ -800,7 +790,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -876,5 +866,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

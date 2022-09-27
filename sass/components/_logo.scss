@@ -3,9 +3,16 @@
   font-weight: var(--main-headers-font-weight);
   color: var(--main-secondary-color);
   font-size: var(--logo-font-size);
-  line-height: 1.19;
+  line-height: 1.17;
 
   &:visited {
     color: var(--main-secondary-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: var(--logo-font-size-desktop);
+    line-height: 1.19;
   }
 }
