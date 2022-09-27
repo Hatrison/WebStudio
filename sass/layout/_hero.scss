@@ -49,14 +49,14 @@
 @media screen and (min-width: 1200px) {
   .decision-for-your-bussiness {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/main/desktop/desktop-bg-img.jpg);
+      url(../images/main/desktop/desktop-bg-img.jpg);
       padding: 200px 0;
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .decision-for-your-bussiness {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/main/desktop/desktop-bg-img@2x.jpg);
+        url(../images/main/desktop/desktop-bg-img@2x.jpg);
     }
   }
 
