@@ -1,5 +1,6 @@
 .our-clients-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -31,5 +32,23 @@
   .our-clients-link:hover &,
   .our-clients-link:focus & {
     fill: var(--main-secondary-color);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .our-clients-list-item {
+    max-width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-clients-list-item {
+    max-width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-clients-list-item {
+    max-width: 170px;
   }
 }
