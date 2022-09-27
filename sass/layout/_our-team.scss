@@ -1,40 +1,53 @@
 .our-team {
-    background: var(--additional-bg-color);
+  background: var(--additional-bg-color);
+}
+
+.our-team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.our-team-card-name {
+  padding: 30px 0;
+}
+
+.our-team-card {
+  width: 450px;
+  background: var(--colored-theme-main-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-name {
+  font-weight: var(--header-font-weight);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.our-team-paragraphs {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--main-additional-color);
+  margin-bottom: 16px;
+}
+
+.our-team-icon {
+  fill: var(--main-social-links-color);
+}
+
+@media screen and (min-width: 768px) {
+  .our-team-card {
+    width: 354px;
   }
-  
-  .our-team-list {
-    display: flex;
-    gap: 30px;
-  }
-  
-  .our-team-card-name {
-    padding: 30px 0 30px 0;
-  }
-  
+}
+
+@media screen and (min-width: 1200px) {
   .our-team-card {
     width: 270px;
-    background: var(--colored-theme-main-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
   }
-  
-  .our-team-name {
-    font-weight: var(--header-font-weight);
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .our-team-paragraphs {
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    color: var(--main-additional-color);
-    margin-bottom: 16px;
-  }
-  
-  .our-team-icon {
-    fill: var(--main-social-links-color);
-  }
+}
