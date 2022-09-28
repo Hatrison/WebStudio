@@ -57,7 +57,7 @@
 
   .mobile-menu__link {
     font-weight: var(--header-font-weight);
-    font-size: 40px;
+    font-size: 5vh;
     line-height: 1.175;
     letter-spacing: 0.02em;
 
@@ -75,7 +75,7 @@
 
   .mobile-menu__tel {
     font-weight: var(--header-font-weight);
-    font-size: 34px;
+    font-size: 4.27vh;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--main-secondary-color);
@@ -83,7 +83,7 @@
 
   .mobile-menu__email {
     font-weight: var(--header-font-weight);
-    font-size: 24px;
+    font-size: 3vh;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--main-additional-color);
@@ -96,10 +96,28 @@
 
   .mobile-menu__social-link {
     font-weight: var(--header-font-weight);
-    font-size: 18px;
+    font-size: 2.26vh;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--main-secondary-color);
+  }
+}
+
+@media screen and (min-height: 796px) {
+  .mobile-menu__link {
+    font-size: 40px;
+  }
+
+  .mobile-menu__tel {
+    font-size: 34px;
+  }
+
+  .mobile-menu__email {
+    font-size: 24px;
+  }
+
+  .mobile-menu__social-link {
+    font-size: 18px;
   }
 }
 
