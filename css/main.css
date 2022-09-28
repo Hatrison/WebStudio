@@ -200,7 +200,7 @@ ol {
     font-size: 18px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-height: 796px) and (min-width: 480px) {
   .mobile-menu__container {
     padding-left: 40px;
   }
